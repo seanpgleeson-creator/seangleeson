@@ -39,46 +39,73 @@ export default function Projects() {
             </p>
 
             {app.screenshots && app.screenshots.length > 0 && (
-              <div className="mt-6 space-y-3">
-                {/* Desktop screenshots — full width */}
-                {[app.screenshots[0], app.screenshots[1]].filter(Boolean).map((src, i) => (
+              <details className="mt-5 group">
+                <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-sans text-[0.8125rem] font-medium tracking-wide uppercase text-accent hover:text-accent-hover transition-colors duration-150 select-none">
+                  <svg
+                    className="w-3.5 h-3.5 transition-transform duration-200 group-open:rotate-90"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span className="group-open:hidden">View screenshots</span>
+                  <span className="hidden group-open:inline">Hide screenshots</span>
+                </summary>
+
+                <div className="mt-4 space-y-3">
+                  {[app.screenshots[0], app.screenshots[1]].filter(Boolean).map((src, i) => (
+                    <Image
+                      key={src}
+                      src={src}
+                      alt={`${app.name} screenshot ${i + 1}`}
+                      width={760}
+                      height={480}
+                      className="w-full rounded-lg border border-border"
+                    />
+                  ))}
+                  {app.screenshots.length > 2 && (
+                    <div className="grid grid-cols-2 gap-3">
+                      {app.screenshots.slice(2).map((src, i) => (
+                        <Image
+                          key={src}
+                          src={src}
+                          alt={`${app.name} mobile screenshot ${i + 1}`}
+                          width={370}
+                          height={600}
+                          className="w-full rounded-lg border border-border"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </details>
+            )}
+
+            {!app.screenshots && app.screenshot && (
+              <details className="mt-5 group">
+                <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-sans text-[0.8125rem] font-medium tracking-wide uppercase text-accent hover:text-accent-hover transition-colors duration-150 select-none">
+                  <svg
+                    className="w-3.5 h-3.5 transition-transform duration-200 group-open:rotate-90"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span className="group-open:hidden">View screenshots</span>
+                  <span className="hidden group-open:inline">Hide screenshots</span>
+                </summary>
+                <div className="mt-4">
                   <Image
-                    key={src}
-                    src={src}
-                    alt={`${app.name} screenshot ${i + 1}`}
+                    src={app.screenshot}
+                    alt={`${app.name} screenshot`}
                     width={760}
                     height={480}
                     className="w-full rounded-lg border border-border"
                   />
-                ))}
-                {/* Mobile screenshots — two up */}
-                {app.screenshots.length > 2 && (
-                  <div className="grid grid-cols-2 gap-3">
-                    {app.screenshots.slice(2).map((src, i) => (
-                      <Image
-                        key={src}
-                        src={src}
-                        alt={`${app.name} mobile screenshot ${i + 1}`}
-                        width={370}
-                        height={600}
-                        className="w-full rounded-lg border border-border"
-                      />
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {!app.screenshots && app.screenshot && (
-              <div className="mt-6">
-                <Image
-                  src={app.screenshot}
-                  alt={`${app.name} screenshot`}
-                  width={760}
-                  height={480}
-                  className="w-full rounded-lg border border-border"
-                />
-              </div>
+                </div>
+              </details>
             )}
           </article>
         ))}

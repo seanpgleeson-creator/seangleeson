@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import CareerHighlights from "@/components/CareerHighlights";
 import Projects from "@/components/Projects";
+import Books from "@/components/Books";
+import Listening from "@/components/Listening";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <About />
       <CareerHighlights />
       <Projects />
+      <Books />
+      <Listening />
     </div>
   );
 }
