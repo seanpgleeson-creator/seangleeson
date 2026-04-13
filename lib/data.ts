@@ -65,6 +65,7 @@ export type App = {
   tagline: string;
   description: string;
   screenshot: string | null;
+  screenshots: string[] | null;
   url: string | null;
 };
 
@@ -76,6 +77,12 @@ export const apps: App[] = [
     description:
       "ShiftSwap makes it simple for medical staff to post, find, and pick up open shifts — bringing flexibility and calm to one of the more stressful coordination problems in healthcare.",
     screenshot: null,
+    screenshots: [
+      "/shiftswap-browse.png",
+      "/shiftswap-post.png",
+      "/shiftswap-details.png",
+      "/shiftswap-confirm.png",
+    ],
     url: null,
   },
   {
@@ -85,6 +92,7 @@ export const apps: App[] = [
     description:
       "Job searching is broken. Most tools reward volume over fit, leaving candidates exhausted and under-positioned. grndwrk takes a different approach: helping job seekers identify the companies and roles where they can do their best work, then showing up to those opportunities with clarity and conviction.",
     screenshot: null,
+    screenshots: null,
     url: null,
   },
 ];

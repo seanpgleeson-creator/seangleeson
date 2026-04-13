@@ -38,7 +38,38 @@ export default function Projects() {
               {app.description}
             </p>
 
-            {app.screenshot && (
+            {app.screenshots && app.screenshots.length > 0 && (
+              <div className="mt-6 space-y-3">
+                {/* Desktop screenshots — full width */}
+                {[app.screenshots[0], app.screenshots[1]].filter(Boolean).map((src, i) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt={`${app.name} screenshot ${i + 1}`}
+                    width={760}
+                    height={480}
+                    className="w-full rounded-lg border border-border"
+                  />
+                ))}
+                {/* Mobile screenshots — two up */}
+                {app.screenshots.length > 2 && (
+                  <div className="grid grid-cols-2 gap-3">
+                    {app.screenshots.slice(2).map((src, i) => (
+                      <Image
+                        key={src}
+                        src={src}
+                        alt={`${app.name} mobile screenshot ${i + 1}`}
+                        width={370}
+                        height={600}
+                        className="w-full rounded-lg border border-border"
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {!app.screenshots && app.screenshot && (
               <div className="mt-6">
                 <Image
                   src={app.screenshot}
@@ -46,7 +77,6 @@ export default function Projects() {
                   width={760}
                   height={480}
                   className="w-full rounded-lg border border-border"
-                  style={{ borderRadius: "8px" }}
                 />
               </div>
             )}
