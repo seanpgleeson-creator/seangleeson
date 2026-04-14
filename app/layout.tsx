@@ -19,7 +19,21 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Sean Gleeson — Commerce, Product, Builder",
   description:
-    "I've spent 15+ years at the intersection of commerce and curiosity — building marketplaces, pricing tools, and now apps of my own.",
+    "Commerce leader and product strategist. At Target, building pricing tools that earn trust. Leveling up on AI through practice, action, and experimentation.",
+  openGraph: {
+    title: "Sean Gleeson — Commerce, Product, Builder",
+    description:
+      "Commerce leader and product strategist. At Target, building pricing tools that earn trust. Leveling up on AI through practice, action, and experimentation.",
+    url: "https://seangleeson.dev",
+    siteName: "Sean Gleeson",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sean Gleeson — Commerce, Product, Builder",
+    description:
+      "Commerce leader and product strategist. At Target, building pricing tools that earn trust. Leveling up on AI through practice, action, and experimentation.",
+  },
 };
 
 export default function RootLayout({

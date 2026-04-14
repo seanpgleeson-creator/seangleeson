@@ -7,7 +7,7 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="py-14 md:py-20"
+      className="pt-20 md:pt-28 pb-14 md:pb-20"
     >
       <h2
         id="about-heading"

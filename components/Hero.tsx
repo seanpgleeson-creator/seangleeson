@@ -22,14 +22,14 @@ export default function Hero() {
           href={hero.linkedInUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-sans text-[0.8125rem] font-medium uppercase tracking-[0.05em] text-accent transition-colors duration-150 hover:text-accent-hover hover:underline decoration-1 underline-offset-4"
+          className="font-sans text-[0.8125rem] font-medium uppercase tracking-[0.05em] text-accent transition-colors duration-150 hover:text-accent-hover hover:underline decoration-1 underline-offset-4 py-2"
         >
           LinkedIn
         </a>
         <span className="text-ink-tertiary select-none">·</span>
         <a
           href={`mailto:${hero.email}`}
-          className="font-sans text-[0.8125rem] font-medium uppercase tracking-[0.05em] text-accent transition-colors duration-150 hover:text-accent-hover hover:underline decoration-1 underline-offset-4"
+          className="font-sans text-[0.8125rem] font-medium uppercase tracking-[0.05em] text-accent transition-colors duration-150 hover:text-accent-hover hover:underline decoration-1 underline-offset-4 py-2"
         >
           Email
         </a>
