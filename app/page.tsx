@@ -4,6 +4,7 @@ import CareerHighlights from "@/components/CareerHighlights";
 import Projects from "@/components/Projects";
 import Books from "@/components/Books";
 import Listening from "@/components/Listening";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Books />
       <Listening />
+      <Contact />
     </div>
   );
 }
