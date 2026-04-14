@@ -1,15 +1,15 @@
 export const hero = {
   name: "Sean Gleeson",
   positioningStatement:
-    "Commerce leader. Product strategist. At Target, building pricing tools that earn trust. Leveling up on AI through practice, action, and experimentation.",
+    "Commerce leader. Product strategist. At Target, building pricing capabilities that drive affordability and trust. Leveling up on AI through practice, action, and experimentation.",
   linkedInUrl: "https://www.linkedin.com/in/seangleeson",
   email: "SeanPGleeson@gmail.com",
 };
 
 export const about = {
   paragraphs: [
-    "I've built my career at the intersection of commerce and curiosity. It started in retail merchandising, then eCommerce pulled me to Chewy, Amazon, and Target — always close to the problem, always building.",
-    "From there, Amazon. Then Target, where I joined to help build Target Plus before the playbook existed — launching Pet, Beauty, Vitamins, and Grocery on a marketplace still figuring out what it could become. What I love about that kind of work is the same thing I loved about Chewy: you're close to entrepreneurs, close to the problem, and there's no hiding behind a mature process. You just have to figure it out.",
+    "I've built my career at the intersection of commerce and curiosity. It started in retail merchandising, then eCommerce pulled me to Chewy, Amazon, and Target — always close to the problem, always building, and thinking like an entrepreneur.",
+    "My career started in multichannel merchandising with Target, then led to the pet industry disruption of Chewy.com, where I helped grow the platform to an exit. From there, Amazon. Then Target, where I joined to help build Target Plus before the playbook existed — launching Pet, Beauty, Vitamins, and Grocery on a marketplace still figuring out what it could become. I'm energized by building and entrepreneurial mindedness: being close to entrepreneurs, close to the problem, and there's no hiding behind a mature process.",
     "Pricing is where I've spent a meaningful stretch of my career since then — building tools that span the full price lifecycle, from how prices are set to how they're communicated to guests. It's less glamorous than launching a category, but it matters enormously. A guest who trusts a price is a guest who comes back.",
     "My operating philosophy hasn't changed much across any of these roles: start with intuition, verify with data, and make space for honest disagreement. The best teams I've been part of think like scientists — they form hypotheses, run tests, and are genuinely willing to be wrong. Progress almost always starts with someone willing to say \"I think we're missing something here.\" I try to be that person, and I try to build teams where anyone can be.",
     "Lately, AI has changed what's possible for builders like me. I've started using it not just at work — to prototype faster, think more clearly, and move from idea to something real — but outside of work too. I've built an app that helps medical staff coordinate shifts, and another that helps job seekers cut through the noise of a broken search process. These projects are early, but they're real, and building them has reminded me why I got into this work in the first place.",
