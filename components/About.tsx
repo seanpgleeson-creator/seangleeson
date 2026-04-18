@@ -1,8 +1,52 @@
-import { about } from "@/lib/data";
+import { about, type AboutBlock } from "@/lib/data";
+
+function renderBlock(block: AboutBlock, index: number) {
+  if (block.kind === "lede") {
+    return (
+      <p
+        key={index}
+        className="font-medium text-[1.125rem] leading-[1.65] text-ink mb-10"
+      >
+        {block.body}
+      </p>
+    );
+  }
+
+  if (block.kind === "section") {
+    return (
+      <div key={index} className="mb-10">
+        <h3
+          className="font-fraunces font-medium text-ink text-[1.0625rem] leading-[1.3] mb-4"
+          style={{ fontVariationSettings: "'SOFT' 0, 'WONK' 0" }}
+        >
+          {block.heading}
+        </h3>
+        <div className="space-y-3">
+          {block.body.map((paragraph, i) => (
+            <p key={i} className="font-sans text-[1.0625rem] leading-[1.7] text-ink">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (block.kind === "signoff") {
+    return (
+      <p
+        key={index}
+        className="font-sans text-[1.0625rem] leading-[1.7] text-ink-secondary mt-2"
+      >
+        {block.body}
+      </p>
+    );
+  }
+
+  return null;
+}
 
 export default function About() {
-  const [openingLine, ...rest] = about.paragraphs;
-
   return (
     <section
       id="about"
@@ -17,13 +61,8 @@ export default function About() {
         About
       </h2>
 
-      <div className="max-w-[65ch] font-sans text-[1.0625rem] leading-[1.7] text-ink">
-        <p className="font-medium mb-6">{openingLine}</p>
-        {rest.map((paragraph, i) => (
-          <p key={i} className="mb-6 last:mb-0">
-            {paragraph}
-          </p>
-        ))}
+      <div className="max-w-[65ch]">
+        {about.blocks.map((block, i) => renderBlock(block, i))}
       </div>
     </section>
   );

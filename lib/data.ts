@@ -6,15 +6,60 @@ export const hero = {
   email: "SeanPGleeson@gmail.com",
 };
 
-export const about = {
-  paragraphs: [
-    "I've built my career at the intersection of commerce and curiosity. It started in retail merchandising, then eCommerce pulled me to Chewy, Amazon, and Target — always close to the problem, always building, and thinking like an entrepreneur.",
-    "My career started in multichannel merchandising with Target, then led to the pet industry disruption of Chewy.com, where I helped grow the platform to an exit. From there, Amazon. Then Target, where I joined to help build Target Plus before the playbook existed — launching Pet, Beauty, Vitamins, and Grocery on a marketplace still figuring out what it could become. I'm energized by building and entrepreneurial mindedness: being close to entrepreneurs, close to the problem, and there's no hiding behind a mature process.",
-    "Pricing is where I've spent a meaningful stretch of my career since then — building tools that span the full price lifecycle, from how prices are set to how they're communicated to guests. It's less glamorous than launching a category, but it matters enormously. A guest who trusts a price is a guest who comes back.",
-    "My operating philosophy hasn't changed much across any of these roles: start with intuition, verify with data, and make space for honest disagreement. The best teams I've been part of think like scientists — they form hypotheses, run tests, and are genuinely willing to be wrong. Progress almost always starts with someone willing to say \"I think we're missing something here.\" I try to be that person, and I try to build teams where anyone can be.",
-    "Lately, AI has changed what's possible for builders like me. I've started using it not just at work — to prototype faster, think more clearly, and move from idea to something real — but outside of work too. I've built an app that helps medical staff coordinate shifts, and another that helps job seekers cut through the noise of a broken search process. These projects are early, but they're real, and building them has reminded me why I got into this work in the first place.",
-    "When I'm not building, I'm outside. Fly fishing, chasing powder, being a girl dad and golden retriever dad, and occasionally convincing my wife that one more trail is a good idea.",
-    "This site is a window into how I think, what I've built, and what I'm curious about. Thanks for taking the time.",
+export type AboutBlock =
+  | { kind: "lede"; body: string }
+  | { kind: "section"; heading: string; body: string[] }
+  | { kind: "signoff"; body: string };
+
+export const about: { blocks: AboutBlock[] } = {
+  blocks: [
+    {
+      kind: "lede",
+      body: "I pair instinct with evidence, build teams that push back on me, and treat trust as something you design into a product — not bolt on after.",
+    },
+    {
+      kind: "section",
+      heading: "How I think",
+      body: [
+        "Good decisions start with a hypothesis, not a conclusion. I form a view early and update it when the evidence demands.",
+        "Trust is a design problem. When something feels off — to a guest, a teammate, a user — you've already lost something. I design for that.",
+        "Practice over theory. I learn by shipping. An imperfect version in production beats a perfect version in a deck.",
+      ],
+    },
+    {
+      kind: "section",
+      heading: "How I lead",
+      body: [
+        "I ask more than I answer. My job is to create the conditions for the right thinking to happen — not to be the source of it.",
+        "I build teams where anyone can say \u201cI think we\u2019re missing something here.\u201d That sentence has started more good work than any presentation I\u2019ve given.",
+        "I remove obstacles. Set context clearly, make disagreement safe, and trust the people you hired.",
+      ],
+    },
+    {
+      kind: "section",
+      heading: "The path here",
+      body: [
+        "Merchandising \u2192 eCommerce \u2192 platform-building \u2192 pricing. I helped grow Chewy from a scrappy startup to one of retail\u2019s most loved brands. Joined Target to build Target Plus before the playbook existed. Now building pricing tools that make a $100B retailer feel trustworthy one guest at a time. The through-line: always close to the problem.",
+      ],
+    },
+    {
+      kind: "section",
+      heading: "Building outside the job",
+      body: [
+        "AI has made it possible for me to build things I couldn\u2019t have shipped alone two years ago. Two real apps \u2014 one for medical staff, one for job seekers \u2014 and each one has taught me more than any article has.",
+      ],
+    },
+    {
+      kind: "section",
+      heading: "Life outside of work",
+      body: [
+        "When I\u2019m not building, I\u2019m outside. Fly fishing, chasing powder, being a girl dad and golden retriever dad, and occasionally convincing my wife that one more trail is a good idea.",
+      ],
+    },
+    {
+      kind: "signoff",
+      body: "This site is a window into how I think, what I\u2019ve built, and what I\u2019m curious about. Thanks for taking the time.",
+    },
   ],
 };
 
