@@ -1,7 +1,7 @@
 export const hero = {
   name: "Sean Gleeson",
   positioningStatement:
-    "Commerce leader. Product strategist. At Target, building pricing capabilities that drive affordability and trust. Leveling up on AI through practice, action, and experimentation.",
+    "I'm a product strategist and builder. At Target, I build pricing capabilities that drive affordability and trust. My goal is to be a practitioner, leveling up on AI through experimentation and curiosity. This website is one example. Welcome!",
   linkedInUrl: "https://www.linkedin.com/in/seangleeson",
   email: "SeanPGleeson@gmail.com",
 };
@@ -15,45 +15,43 @@ export const about: { blocks: AboutBlock[] } = {
   blocks: [
     {
       kind: "lede",
-      body: "I pair instinct with evidence, build teams that push back on me, and treat trust as something you design into a product — not bolt on after.",
+      body: "I pair intuition with evidence. Every intuition or idea is a hypothesis for which evidence must be sought. I build cultures based on trust, dissent, curiosity, and entrepreneurial thinking.",
     },
     {
       kind: "section",
       heading: "How I think",
       body: [
-        "Good decisions start with a hypothesis, not a conclusion. I form a view early and update it when the evidence demands.",
-        "Trust is a design problem. When something feels off — to a guest, a teammate, a user — you've already lost something. I design for that.",
-        "Practice over theory. I learn by shipping. An imperfect version in production beats a perfect version in a deck.",
+        "Good decisions start with a hypothesis, not a conclusion. I form a point of view early and update as evidence unfolds. Therefore, teams should seek evidence through action early and often.",
+        "Practice over theory. Learn by shipping. An imperfect version in production beats a perfect version in a deck.",
       ],
     },
     {
       kind: "section",
       heading: "How I lead",
       body: [
-        "I ask more than I answer. My job is to create the conditions for the right thinking to happen — not to be the source of it.",
-        "I build teams where anyone can say \u201cI think we\u2019re missing something here.\u201d That sentence has started more good work than any presentation I\u2019ve given.",
-        "I remove obstacles. Set context clearly, make disagreement safe, and trust the people you hired.",
+        "Leadership is hard. It is a responsibility and an investment in the success of others. My job as a leader is to create the conditions for the right thinking to happen, celebrate failures as much as the wins (of which there should be both), and create a culture of confidence and trust.",
+        "Remove obstacles, set context clearly and make disagreement safe.",
       ],
     },
     {
       kind: "section",
       heading: "The path here",
       body: [
-        "Merchandising \u2192 eCommerce \u2192 platform-building \u2192 pricing. I helped grow Chewy from a scrappy startup to one of retail\u2019s most loved brands. Joined Target to build Target Plus before the playbook existed. Now building pricing tools that make a $100B retailer feel trustworthy one guest at a time. The through-line: always close to the problem.",
+        "Merchandising \u2192 eCommerce \u2192 platform-building \u2192 pricing. I helped grow Chewy to one of retail\u2019s most loved brands. Joined Target to build Target Plus before the playbook existed. Now building pricing tools that make a $100B retailer feel trustworthy one guest at a time. The through-line: always close to the problem, building new capabilities.",
       ],
     },
     {
       kind: "section",
       heading: "Building outside the job",
       body: [
-        "AI has made it possible for me to build things I couldn\u2019t have shipped alone two years ago. Two real apps \u2014 one for medical staff, one for job seekers \u2014 and each one has taught me more than any article has.",
+        "AI has made it possible for me to build things I couldn\u2019t have shipped alone two years ago. I strive to be a change agent inside and outside of work. With new tools, I am driving my curiosity into value-delivering apps and tools.",
       ],
     },
     {
       kind: "section",
       heading: "Life outside of work",
       body: [
-        "When I\u2019m not building, I\u2019m outside. Fly fishing, chasing powder, being a girl dad and golden retriever dad, and occasionally convincing my wife that one more trail is a good idea.",
+        "When I\u2019m not building, I\u2019m outside. Fly fishing, chasing powder, Crossfitting, being a girl dad and golden retriever dad, and a husband.",
       ],
     },
     {
