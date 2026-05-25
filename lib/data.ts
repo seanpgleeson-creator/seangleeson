@@ -1,7 +1,7 @@
 export const hero = {
   name: "Sean Gleeson",
   positioningStatement:
-    "I'm a product strategist and builder. At Target, I build pricing capabilities that drive affordability and trust. My goal is to be a practitioner, leveling up on AI through experimentation and curiosity. This website is one example. Welcome!",
+    "I'm a product strategist and builder. At Target, I work on pricing tools that help make things more affordable and build trust in our guests with authentic pricing. I'm a hands-on practitioner, getting better at AI by actually building with it. This site is one of those experiments. Glad you're here.",
   linkedInUrl: "https://www.linkedin.com/in/seangleeson",
   email: "SeanPGleeson@gmail.com",
 };
@@ -15,48 +15,48 @@ export const about: { blocks: AboutBlock[] } = {
   blocks: [
     {
       kind: "lede",
-      body: "I pair intuition with evidence. Every intuition or idea is a hypothesis for which evidence must be sought. I build cultures based on trust, dissent, curiosity, and entrepreneurial thinking.",
+      body: "I like to pair intuition with evidence. I'll happily follow a hunch, but approach it as a hypothesis in a science experiment, looking for proof with evidence and testing. I build teams where trust, healthy disagreement, curiosity, and a bit of entrepreneurial scrappiness are the norm.",
     },
     {
       kind: "section",
       heading: "How I think",
       body: [
-        "Good decisions start with a hypothesis, not a conclusion. I form a point of view early and update as evidence unfolds. Therefore, teams should seek evidence through action early and often.",
-        "Practice over theory. Learn by shipping. An imperfect version in production beats a perfect version in a deck.",
+        "I think good decisions start with a hypothesis, not a conclusion. I'll form a point of view early, then keep updating it as evidence is found, which means the fastest way to learn is usually to do something and see what happens.",
+        "A small, perhaps imperfect, version in production teaches you more than a perfect one in a deck.",
       ],
     },
     {
       kind: "section",
       heading: "How I lead",
       body: [
-        "Leadership is hard. It is a responsibility and an investment in the success of others. My job as a leader is to create the conditions for the right thinking to happen, celebrate failures as much as the wins (of which there should be both), and create a culture of confidence and trust.",
-        "Remove obstacles, set context clearly and make disagreement safe.",
+        "Leadership is hard, and I don't pretend otherwise. The way I see it, my job is mostly to create the conditions for good thinking to happen, then get out of the way. That means removing obstacles, setting context clearly, and making it genuinely safe to disagree with me.",
+        "I try to celebrate the failures as much as the wins. (There should be plenty of both.)",
       ],
     },
     {
       kind: "section",
       heading: "The path here",
       body: [
-        "Merchandising \u2192 eCommerce \u2192 platform-building \u2192 pricing. I helped grow Chewy to one of retail\u2019s most loved brands. Joined Target to build Target Plus before the playbook existed. Now building pricing tools that make a $100B retailer feel trustworthy one guest at a time. The through-line: always close to the problem, building new capabilities.",
+        "Merchandising \u2192 eCommerce \u2192 platform-building \u2192 pricing. I helped grow Chewy into one of retail\u2019s most loved brands, then joined Target to build Target Plus while the playbook was still being written. These days I\u2019m building pricing tools that help a $100B retailer ensure guests get fair pricing, extraordinary deals, and transparency. The through-line has always been the same: stay close to the problem, and build the thing that doesn\u2019t exist yet.",
       ],
     },
     {
       kind: "section",
       heading: "Building outside the job",
       body: [
-        "AI has made it possible for me to build things I couldn\u2019t have shipped alone two years ago. I strive to be a change agent inside and outside of work. With new tools, I am driving my curiosity into value-delivering apps and tools.",
+        "AI has made it possible for me to build things I couldn\u2019t have shipped alone a couple years ago, and honestly that\u2019s been a thrill. I feel like a kid in a sandbox. I like being a bit of a change agent, at work and after hours, and pointing my curiosity at small tools and apps that actually deliver something useful.",
       ],
     },
     {
       kind: "section",
       heading: "Life outside of work",
       body: [
-        "When I\u2019m not building, I\u2019m outside. Fly fishing, chasing powder, Crossfitting, being a girl dad and golden retriever dad, and a husband.",
+        "When I\u2019m not building, I\u2019m usually outside. Fly fishing, chasing powder, getting humbled at CrossFit, or sitting in a rocking chair\u2026all while being a girl dad, golden retriever dad, and husband.",
       ],
     },
     {
       kind: "signoff",
-      body: "This site is a window into how I think, what I\u2019ve built, and what I\u2019m curious about. Thanks for taking the time.",
+      body: "This site is a little window into how I think, what I\u2019ve built, and what I\u2019m curious about. Thanks for spending a few minutes here.",
     },
   ],
 };
@@ -74,28 +74,28 @@ export const careerHighlights: CareerHighlight[] = [
     title:
       "Building the foundation at Chewy before anyone knew what Chewy would become",
     description:
-      "I joined Chewy when it was still finding its footing — and stayed long enough to watch it grow into one of the most beloved brands in retail. In those years, I helped build the assortment from scratch: launching new brands, leading vendor negotiations, and standing up their first container and drop ship programs to expand selection and drive down cost. What I learned there about moving fast, working directly with founders and small brands, and building infrastructure that scales — I've carried into everything since.",
+      "I joined Chewy in the scrappy, fast-growing early years and stuck around long enough to watch it become one of the most beloved brands in retail. I helped build the assortment from scratch, launching new brands, leading vendor negotiations, and building new capabilities like their first container and drop-ship programs to widen selection and bring costs down. What I learned there about moving fast, working shoulder-to-shoulder with founders and small brands, and building infrastructure that scales has stuck with me ever since.",
     metric: "TODO",
   },
   {
     company: "Target Plus",
     title: "Building the playbook for a marketplace that didn't have one yet",
     description:
-      "When I joined Target Plus, the platform was early and the categories were wide open. I led the launch of Pet Supplies, Vitamins & Supplements, Beauty, and Grocery — working directly with sellers and internal teams to define what \"good\" looked like on a platform still figuring itself out.",
+      "When I joined Target Plus, the platform was young and the categories were wide open. I led the launch of Pet Supplies, Vitamins & Supplements, Beauty, and Grocery, working directly with sellers and internal teams to figure out what \"good\" even looked like on a platform that was still figuring itself out.",
     metric: "TODO",
   },
   {
     company: "Target",
     title: "Building the tools that make pricing trustworthy at scale",
     description:
-      "Pricing is one of the most sensitive surfaces in retail — guests notice when something feels off, even if they can't articulate why. I've led development of pricing tools that span the full price lifecycle, from how prices are set to how they're surfaced to guests.",
+      "Pricing is one of the most sensitive surfaces in retail. Guests notice when something feels off, even if they can't quite say why. I've led development of tools that span the full price lifecycle, from how prices get set to how they show up for guests.",
     metric: "TODO",
   },
   {
     company: "Target",
     title: "Struck the right chord on pricing communication",
     description:
-      "When Target.com launched enhanced strikethrough messaging with \"New Lower Price,\" it wasn't just a design tweak — it was a signal to guests that they could trust what they were seeing.",
+      "When Target.com rolled out enhanced strikethrough messaging with \"New Lower Price,\" it was more than a design tweak — it was a small signal that guests could trust what they were looking at. It drove a 7% lift in conversion.",
     metric: "7% lift in conversion rate.",
   },
 ];

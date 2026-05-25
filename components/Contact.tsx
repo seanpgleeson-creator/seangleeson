@@ -16,8 +16,9 @@ export default function Contact() {
       </h2>
 
       <p className="font-sans text-[1.0625rem] leading-[1.7] text-ink mb-6 max-w-[55ch]">
-        I&rsquo;m always happy to connect — whether it&rsquo;s about a role, a
-        project, or just a good conversation.
+        Let&rsquo;s talk. I&rsquo;m always up for a good conversation &mdash;
+        about AI (love to see what others are building), a project, or really
+        anything worth chatting about. Reach out anytime.
       </p>
 
       <div className="flex items-center gap-3">
