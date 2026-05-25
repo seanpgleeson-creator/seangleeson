@@ -29,8 +29,8 @@ export const about: { blocks: AboutBlock[] } = {
       kind: "section",
       heading: "How I lead",
       body: [
-        "Leadership is hard, and I don't pretend otherwise. The way I see it, my job is mostly to create the conditions for good thinking to happen, then get out of the way. That means removing obstacles, setting context clearly, and making it genuinely safe to disagree with me.",
-        "I try to celebrate the failures as much as the wins. (There should be plenty of both.)",
+        "Leadership is hard and a responsibility to others — namely your team. My job as a leader is to create the conditions for good thinking to happen, then get out of the way. That means removing obstacles, setting context clearly, creating a culture of safety, and embracing disagreement.",
+        "Celebrate the failures like you celebrate the wins.",
       ],
     },
     {
