@@ -38,6 +38,17 @@ export default function Projects() {
               {app.description}
             </p>
 
+            {app.url && (
+              <a
+                href={app.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-3 font-sans text-[0.8125rem] font-medium uppercase tracking-[0.05em] text-accent hover:text-accent-hover hover:underline decoration-1 underline-offset-4 transition-colors duration-150"
+              >
+                Visit site
+              </a>
+            )}
+
             {app.screenshots && app.screenshots.length > 0 && (
               <details className="mt-5 group">
                 <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-sans text-[0.8125rem] font-medium tracking-wide uppercase text-accent hover:text-accent-hover transition-colors duration-150 select-none">

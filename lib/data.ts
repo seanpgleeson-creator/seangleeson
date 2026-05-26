@@ -126,7 +126,7 @@ export const apps: App[] = [
       "/shiftswap-details.png",
       "/shiftswap-confirm.png",
     ],
-    url: null,
+    url: "https://www.hcmcshiftswap.com/",
   },
   {
     name: "grndwrk",
