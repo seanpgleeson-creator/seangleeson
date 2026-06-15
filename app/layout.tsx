@@ -3,6 +3,7 @@ import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import { PostHogProvider } from "./providers";
+import { Analytics } from "@vercel/analytics/next";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({
             </p>
           </footer>
         </PostHogProvider>
+        <Analytics />
       </body>
     </html>
   );
